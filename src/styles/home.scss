@@ -1,0 +1,35 @@
+@import 'config';
+
+.jumbotron {
+    background-color: $yellow;
+    border-radius: 0;
+    // background-image: url('https://unsplash.it/1900/1000?image=737');
+    // background-position: center;
+    // background-repeat: no-repeat;
+    // background-blend-mode: multiply;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+
+    color: $dark-gray;
+
+    h1 {
+      letter-spacing: -5px;
+      font-weight: 700;
+    }
+
+    p {
+      font-size: 20px;
+      font-weight: 700;
+    }
+}
+
+
+.btn-cta {
+  border-color: $dark-gray;
+  color: $dark-gray;
+  &:hover {
+    color: $white;
+    background-color: $dark-gray;
+  }
+}

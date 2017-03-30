@@ -1,0 +1,11 @@
+@import 'config';
+
+.title {
+  font-weight: 700;
+  letter-spacing: -4px;
+  margin-bottom: .75em;
+  color: $dark-gray;
+  .text {
+    border-bottom: 6px solid $dark-gray;
+  }
+}
