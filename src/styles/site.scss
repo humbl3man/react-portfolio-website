@@ -1,7 +1,160 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
 @import 'config';
+
 
 body {
   background-color: $body-bg;
-  font-family: roboto, "Helvetica Neue", sans-serif;
+  font-family: "Lato", "Helvetica Neue", sans-serif;
+  min-height: 100%;
+}
+
+// Site Navigation
+.main-header {
+  padding-top: 2em;
+  .bd-home & {
+	background-color: $dirty-yellow;
+  }
+  .brand {
+    align-self: center;
+	font-size: 1.5em;
+	color: $dark-gray;
+	text-decoration: none;
+	&::after {
+	  content: "";
+	  display: block;
+	  margin: auto;
+	  width: 45px;
+	  height: 4px;
+	  background: $dark-gray;
+	  transition: width 300ms ease-in-out;
+	}
+	&:hover::after {
+	  width: 80px;
+	}
+    img {
+      width: 100px;
+    }
+  }
+}
+
+.main-header .inner-nav,
+.main-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-nav {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  a {
+    color: $dark-gray;
+    display: block;
+    padding: 0.4em;
+    text-align: center;
+    text-decoration: none;
+    border-bottom: 1px solid $dark-gray;
+    font-size: 1.125em;
+	font-weight: 300;
+    transition: color 100ms ease-in-out, border 100ms ease-in-out;
+	.bd-home & {
+	  color: $dark-gray;
+	}
+    &:hover {
+      border-bottom-color: $dark-gray;
+    }
+  }
+}
+
+
+@media only screen and (min-width: 769px) {
+  .mobile-nav-toggle {
+	display: none;
+  }
+
+  .main-header {
+    .brand img {
+      width: 120px;
+    }
+
+    .main-nav {
+      flex-direction: row;
+      justify-content: space-between;
+      padding-left: 0.35em;
+      padding-right: 0.55em;
+    }
+
+    .main-nav a {
+      font-size: 1.15em;
+	  border-bottom-color: transparent;
+	  &:hover {
+		border-bottom-color: $dark-gray;
+	  }
+    }
+  }
+}
+
+@media (min-width: 1025px) {
+  .main-header {
+	padding: 1em 0;
+	.inner-nav {
+	  flex-direction: row;
+	  align-items: center;
+	}
+
+    .brand {
+      margin-right: auto;
+    }
+
+    .main-nav {
+      padding-top: 0;
+	  padding-bottom: 0;
+      padding-right: 0;
+      align-items: center;
+    }
+
+    .main-nav a {
+      font-size: 1.2em;
+      margin-right: 0.5em;
+      margin-left: 0.5em;
+    }
+  }
+}
+
+
+
+// Bootstrap overrides
+
+.btn {
+  border-radius: 2px;
+  font-weight: 300;
+  &-warning {
+    background: $dark-gray;
+    border-color: $dark-gray;
+  }
+}
+
+
+// Animations
+
+@keyframes fadeIn {
+  0% {
+	opacity: 0;
+  }
+  100% {
+	opactity: 1;
+  }
+}
+
+@keyframes slideUp {
+  0% {
+	transform: translateY(20px);
+  }
+  100% {
+	transform: translateY(0);
+  }
+}
+
+.faded-in {
+  opacity: 1;
+  animation: fadeIn 300ms ease-in-out forwards, slideUp 200ms ease-in-out forwards;
 }

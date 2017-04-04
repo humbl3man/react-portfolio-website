@@ -10,6 +10,7 @@ import Work from './components/Work';
 const routes = (
   <Router>
     <App>
+        <MainNav/>
       <Route exact path="/" component={Home} />
       <Route path="/bio" component={Bio} />
       <Route path="/services" component={Services} />

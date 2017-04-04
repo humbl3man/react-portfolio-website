@@ -2,37 +2,22 @@ import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 
 const MainNav = props => (
-    <nav className="navbar navbar-toggleable-md navbar-faded navbar-light" style={ { backgroundColor: "#FFE066" } }>
-        <div className="container">
-            <button className="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span className="navbar-toggler-icon"></span>
-            </button>
-            <NavLink className="navbar-brand" to="/">KM</NavLink>
-            <div className="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul className="navbar-nav">
-                    <li className="nav-item active">
-                        <NavLink className="nav-link" to="/">Home
-                            <span className="sr-only">(current)</span>
-                        </NavLink>
-                    </li>
-                    <li className="nav-item">
-                        <NavLink className="nav-link" to="/bio">Bio</NavLink>
-                    </li>
-                    <li className="nav-item">
-                        <NavLink className="nav-link" to="/services">Services</NavLink>
-                    </li>
-                    <li className="nav-item dropdown">
-                        <a className="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Work
-                        </a>
-                        <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <NavLink className="dropdown-item" to="/work/frontend">Front End</NavLink>
-                        </div>
-                    </li>
-                </ul>
-            </div>
+    <header className="main-header">
+        <div className="container inner-nav">
+            <NavLink to="/" className="brand">
+                <span>Konstantin Minevich</span>
+                <span className="mobile-nav-toggle fa fa-navicon"></span>
+                {/*<img src="https://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-Black-Large.png" alt="Logo" />*/}
+            </NavLink>
+            <nav className="main-nav">
+                <NavLink to="/">Home</NavLink>
+                <NavLink to="/bio">Bio</NavLink>
+                <NavLink to="/services">Services</NavLink>
+                <NavLink to="/work">Work</NavLink>
+                <NavLink to="/contact">Contact</NavLink>
+            </nav>
         </div>
-    </nav>
+    </header>
 );
 
 export default MainNav;

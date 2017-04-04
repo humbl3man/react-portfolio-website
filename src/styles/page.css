@@ -1,1 +1,12 @@
-.title{font-weight:700;letter-spacing:-4px;margin-bottom:.75em;color:#344543}.title .text{border-bottom:6px solid #344543}
+.title {
+  font-weight: 700;
+  letter-spacing: -4px;
+  margin-bottom: .75em;
+  color: #30333D; }
+  .title .text {
+    border-bottom: 6px solid #30333D; }
+
+.page-header {
+  background-color: #f5c218; }
+
+/*# sourceMappingURL=page.css.map */

@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
 
 const Services = (props) => (
-  <div className="container mt-3">
-    <h2 className="display-3 title"><span className="text">Services</span></h2>
+  <div className="container mt-3 text-center">
+    <h2 className="display-2 title">Services</h2>
     <div className="row">
-      <div className="col-md-4">
-        <h3>Web Development</h3>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit explicabo odit iste ut doloribus maiores, at, ex quibusdam consequuntur. Ullam porro cumque in ducimus! Cupiditate reiciendis placeat quos tempora laudantium illo explicabo voluptatum rerum quibusdam a! Esse minus, corrupti, debitis harum delectus voluptatibus, atque modi quis eos tempore dicta aperiam.
+      <div className="col-md-6 offset-md-3">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae provident, voluptatem aspernatur. Voluptatem autem sed nisi tempore delectus dolores quia hic quos nobis debitis cumque sunt officia ratione ad dolor, harum earum nihil cupiditate necessitatibus, adipisci, velit corporis facilis ducimus. Eaque, error explicabo dolores eveniet perspiciatis, delectus doloremque, molestias, fugiat rerum exercitationem asperiores! Facilis sint, sapiente ad culpa, delectus recusandae.</p>
       </div>
     </div>
   </div>
