@@ -3,27 +3,42 @@
 .jumbotron {
     background-color: $dirty-yellow;
     border-radius: 0;
-    // background-image: url('https://unsplash.it/1900/1000?image=737');
-    // background-position: center;
-    // background-repeat: no-repeat;
-    // background-blend-mode: multiply;
-    min-height: 500px;
-    display: flex;
-    align-items: center;
 
     color: $dark-gray;
+
+    @media only screen and (min-width: 769px) {
+      min-height: 500px;
+      display: flex;
+      align-items: center;
+    }
 
     h1 {
       letter-spacing: -5px;
       font-weight: 700;
+      font-size: 4rem;
+      color: scale_color($dark-gray, $lightness: -10%);
+      @media only screen and (min-width: 769px) {
+        font-size: 5rem;
+      }
+      @media only screen and (min-width: 1025px) {
+        font-size: 7rem;
+      }
     }
 
-    p {
-      font-size: 20px;
-      font-weight: 700;
+    h3 {
+      font-size: 2rem;
+      color: scale_color($dark-gray, $lightness: -5%);
+      @media only screen and (min-width: 769px) {
+        font-size: 3rem;
+      }
     }
 }
 
+.design-quote {
+  background-color: darken($dark-gray, 10%);
+  color: $washed-white;
+  .blockquote { border-left: 0; }
+}
 
 .btn-cta {
   border-color: $dark-gray;
@@ -32,4 +47,24 @@
     color: $white;
     background-color: $dark-gray;
   }
+}
+
+// callout button animations
+
+// Animations
+
+@keyframes ctaAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.faded-in {
+  opacity: 0;
+  animation: ctaAnimation 300ms ease-in-out forwards 150ms;
 }
