@@ -1,5 +1,7 @@
 #content {
   margin-bottom: 4rem; }
+  .bd-home #content {
+    margin-bottom: 1rem; }
 
 .title {
   font-weight: 700;

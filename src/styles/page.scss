@@ -2,6 +2,9 @@
 
 #content {
   margin-bottom: 4rem;
+  .bd-home & {
+    margin-bottom: 1rem;
+  }
 }
 
 .title {
