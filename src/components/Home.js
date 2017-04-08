@@ -15,7 +15,6 @@ export default class Home extends Component {
 
     componentDidMount() {
         document.body.classList.add('bd-home');
-        let that = this;
         // typed
         init(`#typedMessage`, {
             // required - for now, only accepting texts

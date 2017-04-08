@@ -35,8 +35,8 @@ const Placeholder = () => (
     <div className="row">
         <div className="col-sm-8">
             <h4 className="mb-3">I am working on adding all of my work to this page.</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque consectetur consequatur deleniti dignissimos distinctio dolorem eius enim est ex, fugiat impedit libero maiores officia officiis praesentium quidem, veniam veritatis, vitae. Amet assumenda at dolore doloribus eum ipsa laborum provident! Aut commodi facilis minus molestiae quos, reprehenderit soluta tenetur unde voluptatem?</p>
-
+            <p>I am currently in the process of collecting all my projects in an organized manner so I can better present them to you.</p>
+            <p>Stay tuned...</p>
         </div>
         <div className="col-sm-4">
             <img src={placeholderImage} alt="" className="img-fluid" style={{width: '500px'}}/>
@@ -50,10 +50,6 @@ export default class Work extends Component {
     this.state = {
         projects: projectsJson
     }
-  }
-
-  componentDidMount() {
-      console.log(this.state.projects);
   }
 
   render() {

@@ -20,3 +20,19 @@
 .page-header {
   background-color: darken($dirty-yellow, 18%);
 }
+
+.btn-cta {
+  border-color: $dark-gray;
+  color: $dark-gray;
+  &:hover {
+	color: $white;
+	background-color: $dark-gray;
+  }
+}
+
+// helpers
+
+.visually-hidden {
+  opacity: 0;
+  pointer-events: none;
+}

@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 import socialCodepen from '../images/codepen.svg';
 import socialGithub from '../images/github.svg';

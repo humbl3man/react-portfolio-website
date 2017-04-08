@@ -31,13 +31,6 @@
   .design-quote .blockquote {
     border-left: 0; }
 
-.btn-cta {
-  border-color: #30333D;
-  color: #30333D; }
-  .btn-cta:hover {
-    color: #fff;
-    background-color: #30333D; }
-
 @keyframes ctaAnimation {
   0% {
     opacity: 0;

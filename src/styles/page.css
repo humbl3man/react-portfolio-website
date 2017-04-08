@@ -14,4 +14,15 @@
 .page-header {
   background-color: #f5c218; }
 
+.btn-cta {
+  border-color: #30333D;
+  color: #30333D; }
+  .btn-cta:hover {
+    color: #fff;
+    background-color: #30333D; }
+
+.visually-hidden {
+  opacity: 0;
+  pointer-events: none; }
+
 /*# sourceMappingURL=page.css.map */
