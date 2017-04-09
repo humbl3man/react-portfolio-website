@@ -52,13 +52,21 @@ export default class Work extends Component {
     }
   }
 
+  componentDidMount() {
+      this.setState({
+          canShowProjects: this.state.projects.length > 2
+      });
+  }
+
   render() {
-    const display = (this.state.projects.length >= 3 ? <ProjectContainer projects={this.state.projects}/> : <Placeholder/>);
       return (
         <div>
           <MainNav />
           <div className="container" style={{marginTop: '4rem'}}>
-              {display}
+              {this.state.canShowProjects &&
+              <ProjectContainer projects={this.state.projects}/> }
+              {!this.state.canShowProjects &&
+              <Placeholder/> }
           </div>
         </div>
     );
