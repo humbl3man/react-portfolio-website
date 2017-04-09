@@ -6,30 +6,35 @@ import MainNav from "./Navigation";
 
 import placeholderImage from '../images/work-page-placeholder.jpg';
 
+import '../styles/work.css';
+
 const ProjectContainer = (props) => {
     return (
         <div className="row">
-            {props.projects.map(project => (<Project data={project} key={project.id}/>))}
+            {props.projects.map(project => (<Project details={project} key={project.id}/>))}
         </div>
     );
 };
 
-const Project = ({data}) => (
-  <div className="col-lg-4 mb-2">
-    <div className="card">
-      <div className="card-block">
-        <h4 className="card-title mb-3">{data.title}</h4>
-        <p className="text-muted"><em>{data.type}</em></p>
-        {/* <a className="card-link text-warning" data-toggle="collapse" href={'#' + data.id}><em>Tech Stack</em></a> */}
-        <p className="card-text mt-2">{data.description}</p>
+const Project = ({details}) => {
+    return (
+        <div className="col-lg-4 mb-2">
+            <div className="card project">
+                <div className={`work-image ${details.id}`}></div>
+                <div className="card-block">
+                    <h4 className="card-title mb-3">{details.title}</h4>
+                    <p className="text-muted"><em>{details.type}</em></p>
+                    {/* <a className="card-link text-warning" data-toggle="collapse" href={'#' + data.id}><em>Tech Stack</em></a> */}
+                    <p className="card-text mt-2">{details.description}</p>
 
-      </div>
-      <div className="card-block">
-        <a href={data.url.toString()} className="btn btn-warning btn-block">Visit</a>
-      </div>
-    </div>
-  </div>
-);
+                </div>
+                <div className="card-block">
+                    <a href={details.url.toString()} title={details.url.toString()} className="btn btn-warning btn-block">Visit</a>
+                </div>
+            </div>
+        </div>
+    );
+};
 
 const Placeholder = () => (
     <div className="row">

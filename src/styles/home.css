@@ -10,21 +10,22 @@
   .jumbotron h1 {
     letter-spacing: -5px;
     font-weight: 700;
-    font-size: 4rem;
+    font-size: 3rem;
     color: #2b2e37; }
     @media only screen and (min-width: 769px) {
       .jumbotron h1 {
-        font-size: 5rem; } }
+        font-size: 4rem; } }
     @media only screen and (min-width: 1025px) {
       .jumbotron h1 {
-        font-size: 7rem; } }
+        font-size: 5rem; } }
   .jumbotron h3 {
-    font-size: 2rem;
+    font-size: 1.85rem;
     font-weight: 300;
-    color: #2e303a; }
+    color: #2e303a;
+    min-height: 60px; }
     @media only screen and (min-width: 769px) {
       .jumbotron h3 {
-        font-size: 3rem; } }
+        font-size: 2.85rem; } }
 
 .design-quote {
   background-color: #1a1b20;

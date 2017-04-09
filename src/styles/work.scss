@@ -1,0 +1,13 @@
+@import 'config';
+
+.project {
+  .work-image {
+	height: 250px;
+	background-size: cover;
+	background-position: top left;
+	background-repeat: no-repeat;
+	&.wcp {
+	  background-image: url('../images/work-creation.png');
+	}
+  }
+}

@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAGE,oBAAY;EACb,MAAM,EAAE,KAAK;EACb,eAAe,EAAE,KAAK;EACtB,mBAAmB,EAAE,QAAQ;EAC7B,iBAAiB,EAAE,SAAS;EAC5B,wBAAM;IACJ,gBAAgB,EAAE,kCAAkC",
+"sources": ["work.scss"],
+"names": [],
+"file": "work.css"
+}

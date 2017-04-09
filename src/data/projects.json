@@ -2,10 +2,10 @@
   {
   "id": "wcp",
   "title": "Work Creation Program",
-  "image": "../img/portfolio/wcp/wcp.jpg",
+  "image": "/images/work-creation.png",
   "workAs": "Website",
   "type": "UI Design | Front End",
-  "url": "http://www.workcreationprogram.com/",
+  "url": "http://www.workcreationprogram.com",
   "description": "Work Creation Program Incorporated approached me to redesign their outdated website. Content was great and definitely aligned with company's vision. Yet, the design of the website was old.",
   "features": ["Semantic HTML", "Cross-Browser CSS & JS", "Responsive", "Native HTML5 video", "Bootstrap Grid", "Sticky Header"],
   "technologies": ["HTML", "CSS", "JavaScript", "Bootstrap"]

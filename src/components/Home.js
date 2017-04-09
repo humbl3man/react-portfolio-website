@@ -16,28 +16,32 @@ export default class Home extends Component {
     componentDidMount() {
         document.body.classList.add('bd-home');
         // typed
-        init(`#typedMessage`, {
-            // required - for now, only accepting texts
-            strings: ['Web Developer', 'Lifelong Learner', 'Frontend Developer'],
-            //optional
-            typeSpeed: 55, //default
-            //optional
-            backSpeed: 30, //default
-            //optional
-            startDelay: 500, //default
-            //optional
-            backDelay: 500, //default
-            //optional
-            loop: false, //default
-            //optional
-            showCursor: true, //default
-            //optional
-            cursorChar: "|", //default
-        });
+        this.timeout = setTimeout(() => {
+            init(`#typedMessage`, {
+                // required - for now, only accepting texts
+                strings: ['Web Developer', 'Lifelong Learner', 'Frontend Developer'],
+                //optional
+                typeSpeed: 90, //default
+                //optional
+                backSpeed: 30, //default
+                //optional
+                startDelay: 500, //default
+                //optional
+                backDelay: 500, //default
+                //optional
+                loop: false, //default
+                //optional
+                showCursor: true, //default
+                //optional
+                cursorChar: "|", //default
+            });
+        }, 625);
+
     }
 
     componentWillUnmount() {
         document.body.classList.remove('bd-home');
+        clearTimeout(this.timeout);
     }
 
     render() {
@@ -61,7 +65,7 @@ export default class Home extends Component {
                             </div>
                         </div>
                     </div>
-                    <header className="jumbotron text-center text-md-left hero mb-0">
+                    <header className="jumbotron text-center hero mb-0">
                         <div className="container">
                             <div className="animated slide-in-down">
                                 <h1 className="">Konstantin Minevich</h1>

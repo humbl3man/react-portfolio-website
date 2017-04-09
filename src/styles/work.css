@@ -1,0 +1,9 @@
+.project .work-image {
+  height: 250px;
+  background-size: cover;
+  background-position: top left;
+  background-repeat: no-repeat; }
+  .project .work-image.wcp {
+    background-image: url("../images/work-creation.png"); }
+
+/*# sourceMappingURL=work.css.map */
