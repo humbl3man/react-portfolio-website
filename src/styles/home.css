@@ -20,6 +20,7 @@
         font-size: 7rem; } }
   .jumbotron h3 {
     font-size: 2rem;
+    font-weight: 30;
     color: #2e303a; }
     @media only screen and (min-width: 769px) {
       .jumbotron h3 {
@@ -27,7 +28,8 @@
 
 .design-quote {
   background-color: #1a1b20;
-  color: #eee; }
+  color: #eee;
+  font-weight: 300; }
   .design-quote .blockquote {
     border-left: 0; }
 

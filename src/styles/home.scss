@@ -27,6 +27,7 @@
 
     h3 {
       font-size: 2rem;
+      font-weight: 300;
       color: scale_color($dark-gray, $lightness: -5%);
       @media only screen and (min-width: 769px) {
         font-size: 3rem;
@@ -37,6 +38,7 @@
 .design-quote {
   background-color: darken($dark-gray, 10%);
   color: $washed-white;
+  font-weight: 300;
   .blockquote { border-left: 0; }
 }
 

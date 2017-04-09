@@ -63,14 +63,16 @@ export default class Home extends Component {
                     </div>
                     <header className="jumbotron text-center text-md-left hero mb-0">
                         <div className="container">
-                            <h1>Konstantin Minevich</h1>
-                            <h3><span id="typedMessage"></span></h3>
+                            <div className="animated slide-in-down">
+                                <h1 className="">Konstantin Minevich</h1>
+                                <h3><span id="typedMessage"></span></h3>
+                            </div>
                             <a href="#" data-toggle="modal" data-target="#contactPopup" className="btn btn-cta btn-lg font-weight-bold mt-3 faded-in">Contact Me</a>
                         </div>
                     </header>
 
                     <div className="design-quote text-center" style={{padding: '5rem .5rem'}}>
-                        <blockquote className="blockquote" style={{fontSize: '1.6rem'}}>
+                        <blockquote className="blockquote animated slide-in-up" style={{fontSize: '1.6rem'}}>
                             <p className="mb-0">There is no design without discipline. There is no discipline without intelligence.</p>
                             <footer className="blockquote-footer">Massimo Vignelli</footer>
                         </blockquote>
