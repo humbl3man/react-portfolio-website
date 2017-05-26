@@ -32,9 +32,9 @@ export default class MainNav extends Component {
                         {/*<img src="https://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-Black-Large.png" alt="Logo" />*/}
                     </span>
                     <nav className={"main-nav" + (this.state.mobileMenuOpen ? "" : " hidden-on-mobile")}>
-                        <NavLink to="/">Home</NavLink>
-                        <NavLink to="/bio">Bio</NavLink>
-                        <NavLink to="/work">Work</NavLink>
+                        <NavLink exact activeClassName="active" to="/">Home</NavLink>
+                        <NavLink activeClassName="active" to="/bio">Bio</NavLink>
+                        <NavLink activeClassName="active" to="/work">Work</NavLink>
                     </nav>
                 </div>
             </header>

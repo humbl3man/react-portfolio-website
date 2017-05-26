@@ -63,7 +63,8 @@ body {
 	.bd-home & {
 	  color: $dark-gray;
 	}
-    &:hover {
+    &:hover,
+	&.active {
       border-bottom-color: $dark-gray;
     }
   }
@@ -135,7 +136,8 @@ body {
     .main-nav a {
       font-size: 1.15em;
 	  border-bottom-color: transparent;
-	  &:hover {
+	  &:hover,
+	  &.active {
 		border-bottom-color: $dark-gray;
 	  }
     }

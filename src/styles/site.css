@@ -49,7 +49,7 @@ body {
     transition: color 100ms ease-in-out, border 100ms ease-in-out; }
     .bd-home .main-nav a {
       color: #30333D; }
-    .main-nav a:hover {
+    .main-nav a:hover, .main-nav a.active {
       border-bottom-color: #30333D; }
 
 @media only screen and (max-width: 768px) {
@@ -95,7 +95,7 @@ body {
     .main-header .main-nav a {
       font-size: 1.15em;
       border-bottom-color: transparent; }
-      .main-header .main-nav a:hover {
+      .main-header .main-nav a:hover, .main-header .main-nav a.active {
         border-bottom-color: #30333D; } }
 @media (min-width: 1025px) {
   .main-header {
