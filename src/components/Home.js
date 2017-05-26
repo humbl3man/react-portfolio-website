@@ -67,7 +67,7 @@ export default class Home extends Component {
                     </div>
                     <header className="jumbotron text-center hero mb-0">
                         <div className="container">
-                            <div className="animated slide-in-down">
+                            <div className="animated slide-in-left">
                                 <h1 className="">Konstantin Minevich</h1>
                                 <h3><span id="typedMessage"></span></h3>
                             </div>

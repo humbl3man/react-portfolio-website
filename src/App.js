@@ -5,6 +5,7 @@ import React, {Component} from 'react';
 import Footer from './components/Footer';
 
 import "./styles/site.css";
+import "./styles/animations.css";
 import "./styles/page.css";
 
 const Notification = (props) => {
